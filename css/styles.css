@@ -33,10 +33,21 @@ body {
   padding: 30px 70px;
 }
 
+.image {
+  border-radius: 12px;
+}
+
 .container-all-products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-column-gap: 24px;
-  grid-row-gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media screen and (width > 768px) {
+  .container-all-products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 32px;
+  }
 }

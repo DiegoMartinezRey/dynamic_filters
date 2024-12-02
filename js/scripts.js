@@ -86,6 +86,7 @@ const createItems = (products) => {
     newItem.classList.add("item");
 
     const imgElement = document.createElement("img");
+    imgElement.classList.add("image");
     imgElement.src = product.img;
     imgElement.alt = product.name;
 
