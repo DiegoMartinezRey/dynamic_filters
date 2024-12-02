@@ -22,3 +22,21 @@ body {
   margin: 0;
   font-family: sans-serif;
 }
+
+.filter-container {
+  padding: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  padding: 30px 70px;
+}
+
+.container-all-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 32px;
+}

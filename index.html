@@ -7,6 +7,26 @@
     <title>Document</title>
   </head>
   <body>
+    <header class="filter-container">
+      <div>
+        <label for="">Name:</label>
+        <input id="filter" type="text" />
+      </div>
+      <div>
+        <label for="sugarless-filter">Sugarless</label>
+        <input id="sugarless-filter" type="checkbox" />
+      </div>
+      <div>
+        <select name="" id="order-option">
+          <option value="default">default</option>
+          <option value="name">Name</option>
+          <option value="price">Price</option>
+        </select>
+      </div>
+    </header>
+    <main class="container">
+      <ul id="list-items" class="container-all-products"></ul>
+    </main>
     <script src="/js/scripts.js"></script>
   </body>
 </html>
